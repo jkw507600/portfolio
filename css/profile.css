@@ -1,0 +1,183 @@
+.aboutme {
+    display: flex;
+}
+
+/* .aboutme img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+
+.myvideo {
+}
+
+.myvideo img {
+    display: block;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+.mymain {
+    width: 100%;
+    padding-left: 56px;
+    padding-top: 40px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo_header {
+    /* width: 770px; */
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.logo_header img {
+    display: block;
+    width: 152px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.logo_header .pocket {
+    
+}
+
+.logo_header .pocket:before  {
+    /* display: none; */
+    position: absolute;
+    top: 0;
+    right: 20%;
+    z-index: 10;
+    content: '';
+    background: url(../images/pocket_hover-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size : contain;
+    width: 185px;
+    height: 108px;
+}
+
+.logo_header .pocket img {
+    display: block;
+    position: absolute;
+    top: 16px;
+    right: 30%;
+    width: 72px;
+}
+
+/* .logo_header .pocket img:hover {
+    z-index: 1;
+    background-image: url(../images/pocket_hover.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+} */
+
+.logo_header h2 {
+    font-family: 'Lemon', serif;
+    padding: 24px;
+    font-size: 28px;
+    line-height: 42px;
+    font-weight: bold;
+}
+
+.contents {
+    display: flex;
+    width: 732px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.section {
+    flex: 1;
+}
+
+.section.left {}
+
+.section.left .titlebox {
+    width: 370px;
+    height: 260px;
+}
+
+.titlebox h3 {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 24px;
+}
+.titlebox .textPack {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.textPack.main {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.titlebox .textPack .years {
+}
+
+.textPack .years span {
+    display: block;
+    font-weight: bold;
+    padding-bottom: 12px;
+}
+
+.textPack .years p {
+    display: block;
+    padding-bottom: 3px;
+    font-size: 14px;
+}
+
+.section.right .titlebox {
+    width: 370px;
+    height: 260px;
+}
+
+.section.left .titlebox.tags {
+    width: 350px;
+    height: 95px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 6px;
+}
+
+.titlebox.tags .tag {
+    display: flex;
+    align-items: center;
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 8px;
+    border: 1px solid #222;
+    border-radius: 18px;
+}
+
+
+.section.right .titlebox.long {
+    width: 332px;
+    height: 520px;
+}
+
+.titlebox.snsicon .sns_icons {
+    display: flex;
+    padding: 0 20px;
+    gap: 20px;
+}
+
+.titlebox.snsicon .sns img {
+    display: block;
+    width: 80%;
+    cursor: pointer;
+}

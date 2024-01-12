@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio_profile</title>
+    <link rel="stylesheet" href="../css/works.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <!-- header -->
+        </div>
+        <div class="container">
+            <div class="btns">
+                <button data-filter="*" class="active">All</button>
+                <button data-filter=".UI / UX">UI / UX</button>
+                <button data-filter=".Graphic">Graphic</button>
+                <button data-filter=".3d Mockup">3d Mockup</button>
+            </div>
+            <div class="grid">
+                <!-- grid로 나눠진 덩어리  -->
+            </div>
+        </div>
+        <div class="footer">
+            <!-- footer -->
+        </div>
+    </div>
+
+</body>
+
+<script>
+    var itemdata = [
+        {
+            img: '../images/list_01.jpg',
+            name: '공원 디자인',
+            des: '퍼블릭 디자인',
+        },
+        {
+            img: '../images/list_02.jpg',
+            name: '러쉬 팝업 스토어',
+            des: '인테리어 디자인',
+        },
+        {
+            img: '../images/list_03.jpg',
+            name: '쇼케이스 도안 디자인',
+            des: '맞춤 제작 디자인',
+        },
+        {
+            img: '../images/list_04.jpg',
+            name: '이메일 캠페인',
+            des: '독립기념일 행사',
+        },
+        {
+            img: '../images/list_05.jpg',
+            name: '이메일 캠페인',
+            des: '맞춤 제작 디자인',
+        },
+        {
+            img: '../images/list_06.jpg',
+            name: '이메일 캠페인',
+            des: '아이템 홍보',
+        },
+        {
+            img: '../images/list_07.jpg',
+            name: '이메일 캠페인',
+            des: '연말 세일 행사',
+        },
+        {
+            img: '../images/list_08.jpg',
+            name: '이메일 캠페인',
+            des: '아이템 홍보',
+        },
+        {
+            img: '../images/list_09.jpg',
+            name: '이메일 캠페인',
+            des: '연간 세일 행사',
+        },
+        {
+            img: '../images/list_10.jpg',
+            name: '어플리케이션 리디자인',
+            des: '감정 기록 앱 디자인',
+        },
+        {
+            img: '../images/list_11.jpg',
+            name: '웹 사이트 클론 ',
+            des: '이니스프리',
+        },
+        {
+            img: '../images/list_12.jpg',
+            name: '웹 사이트 클론',
+            des: '현대 카드',
+        },
+        {
+            img: '../images/list_13.jpg',
+            name: '웹 사이트 제작',
+            des: '나우 디스플레이',
+        },
+        {
+            img: '../images/list_14.jpg',
+            name: '토이 디퓨저',
+            des: '제품 디자인',
+        },
+        {
+            img: '../images/list_15.jpg',
+            name: '컴팩트 킥보드',
+            des: '제품 디자인',
+        },
+        {
+            img: '../images/list_16.jpg',
+            name: '홈페이지 배너',
+            des: '아이템 홍보',
+        },
+        {
+            img: '../images/list_17.jpg',
+            name: '홈페이지 배너',
+            des: '아이템 홍보',
+        },
+        {
+            img: '../images/list_18.jpg',
+            name: '홍보물 제작',
+            des: '롯데워터파크 서포터즈 활동',
+        },
+        {
+            img: '../images/list_19.jpg',
+            name: '카달로그 제작',
+            des: '아이템 홍보',
+        },
+        {
+            img: '../images/list_20.jpg',
+            name: '카달로그 제작',
+            des: '아이템 홍보',
+        },
+        {
+            img: '../images/list_21.jpg',
+            name: '웹 사이트 클론',
+            des: '대한 항공',
+        },
+    ]
+
+    var list = $('.grid')
+    $(itemdata).each(function (index, it) {
+        // console.log(it.name)
+        var row = `<div class='grid-item'>
+                    <div class="photo"><a><img src="${it.img}" alt=""></a></div>
+                    <div class="titles">
+                        <div class="name"><h3>${it.name}</h3></div>
+                        <div class="des"><p>${it.des}</p></div>
+                    </div>
+                   </div>`
+        list.append(row)
+    })
+
+
+    $(function () {
+        var $grid = $('.grid').isotope({
+            itemSelector: '.grid-item',
+            layoutMode: 'fitRows',
+        })
+
+        var filterFns = {
+            numberGreaterThan50: function () {
+                var number = $(this).find('.number').text()
+                return parseInt(number, 10) > 50
+            },
+            ium: function () {
+                var name = $(this).find('.name').text()
+                return name.match(/ium$/)
+            },
+        }
+
+        $('.btns').on('click', 'button', function () {
+            var filterValue = $(this).attr('data-filter')
+            filterValue = filterFns[filterValue] || filterValue
+            $grid.isotope({ filter: filterValue })
+        })
+    })
+
+
+</script>
+
+<script>
+    $(function () {
+        $('.footer').load('../inc/footer.html')
+        $('.header').load('../inc/header.html')
+    })
+</script>
+
+
+</html>

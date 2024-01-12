@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon&family=Noto+Sans+KR:wght@300;400;600&display=swap');
+
+*{
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-size: 16px;
+    line-height: 24px;
+    color: #222;
+    font-family: 'Noto Sans KR', sans-serif;
+    
+}
+
+.wrap {
+    width: 100%;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+}
+
+.header .logo {
+    padding-left: 70px;
+}
+
+.header .logo img {
+    display: block;
+    width: 200px;
+    height: 100%;
+}
+.header .gnb {
+    display: flex;
+    gap: 68px;
+    padding-right: 70px;
+}
+
+.header .gnb li {}
+
+.header .gnb li a {
+    display: block;
+}
+
+.header .gnb li a.active {
+    font-weight: bold;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* gap: 10px; */
+}
+
+.main img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main .item {
+    background-color: red;
+    height: 960px;
+    display: flex;
+    flex-direction: column;
+}
+
+.item .top {
+    background-color: yellow;
+    height: 50%;
+    display: flex;
+    /* gap: 10px; */
+}
+
+.item .top .box {
+    background-color: orange;
+    width: 50%;
+    height: 100%;
+}
+
+.item .bottom {
+    height: 50%;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #222;
+    color: #fff;
+    height: 80px;
+}
+
+.footer .f_logo {
+    padding-left: 90px;
+}
+.footer .f_logo img {
+    width: 155px;
+}
+
+.footer .f_info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+    padding-right: 100px;
+}
+
+.footer .f_info p {
+    font-size: 10px;
+    line-height: 1.2;
+}
