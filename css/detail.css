@@ -1,0 +1,34 @@
+.board {}
+.board .big_title {}
+.board .big_title h2 {}
+.board .big_title .back {}
+.board .big_title .back img {}
+.board .main_title {}
+.board .main_title h3 {}
+.board .main_title .textbox {}
+.textbox .leftbox {}
+.leftbox .texts {}
+.leftbox .links {}
+
+.textbox .rightbox {}
+.rightbox .info {}
+.rightbox .info h4 {}
+.rightbox .info p {}
+
+.banner {}
+.reason {}
+.video_boxes {}
+.event {}
+.event .event_wrap {}
+.event .event_wrap h3 {}
+.event .event_wrap .boxes_wrap {}
+.boxes_wrap .whitebox {}
+.boxes_wrap .whitebox h5 {}
+.boxes_wrap .whitebox img {}
+.boxes_wrap .whitebox .hide {}
+.solution {}
+.solution .background {}
+.solution .background img {}
+.solution .background .textbox {}
+.solution .background .textbox h2 {}
+.solution .background .textbox span {}
