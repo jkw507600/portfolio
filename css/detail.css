@@ -96,9 +96,9 @@
     padding-bottom: 250px;
 }
 .video_boxes .video  {}
-.video_boxes .video .v {
+
+.video_boxes .video video {
     width: 413px;
-    height: 230px;
     background-color: #eee;
     border-radius: 18px;
 }
@@ -109,8 +109,7 @@
     justify-content: center;
 }
 .event {
-    /* background-color: #eee;
-    width: 100%; */
+    background-color: #EFBFBD;
     height: 528px;
 }
 .event .textbox {
@@ -124,7 +123,7 @@
 .event .textbox .boxes_wrap {
     display: flex;
     gap: 72px;
-    padding-top: 20px;
+    padding-top: 35px;
 }
 
 .whitebox_wrap {
@@ -134,7 +133,7 @@
 .boxes_wrap .whitebox {
     width: 202px;
     height: 116px;
-    background-color: #e0e0e0;
+    background-color: #FFD6D4;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -164,16 +163,19 @@
     width: 100%;
 }
 
-/* .whitebox::before {
+.whitebox_wrap:hover.whitebox_wrap::before {
     display: block;
-    width: 0;
     content: '';
     position: absolute;
-    top: -10px;
-    left: 0;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: 20px solid #fff;
+    border-top: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
     border-width: 0 8px 10px;
-    background-color: #fff;
-} */
+}
 
 .whitebox_wrap:hover .whitebox {
     background-color: #fff;
@@ -183,21 +185,50 @@
     transition: all 0.3s;
 }
 .solution {
-   /* width: 1920px; */
    height: 100%;
+   position: relative;
 }
 .solution .background {
     display: flex;
+    align-items: flex-end;
     gap: 30px;
     padding-top: 266px;
-    padding-bottom: 180px;
+    padding-bottom: 360px;
+    width: 1300px;
+    margin: 0 auto;
 }
-.solution .background img {
-    display: none;
+
+
+.solution .background::after {
+    content: '';
+    top: 650px;
+    left: 0;
+    position: absolute;
     width: 100%;
+    height: 528px;
+    background-color: #f5f5f5;
+}
+
+.solution .background img {
+    display: block;
+    z-index: 1;
+    
 }
 .solution .background .textbox {
-    margin-left: 310px;
+    z-index: 1;
+    width: 413px;
+    height: 310px;
+    
 }
-.solution .background .textbox h3 {}
-.solution .background .textbox span {}
+.solution .background .textbox h3 {
+    font-size: 36px;
+}
+.solution .background .textbox span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.solution .background .textbox p {
+    font-size: 14px;
+    padding-top: 14px;
+}
