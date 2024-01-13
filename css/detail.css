@@ -1,4 +1,11 @@
-.board {}
+.view {
+    width: 1300px;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    height: 100%;
+}
+
 .board .big_title {
     display: flex;
     align-items: center;
@@ -17,6 +24,7 @@
 
 .board .main_title h3 {
     font-size: 36px;
+    font-weight: normal;
     line-height: 1.4;
     padding-bottom: 30px;
 }
@@ -101,11 +109,12 @@
     justify-content: center;
 }
 .event {
-    background-color: #eee;
-    width: 100%;
+    /* background-color: #eee;
+    width: 100%; */
     height: 528px;
 }
 .event .textbox {
+    padding-top: 100px;
     width: 1300px;
     margin: 0 auto;
     display: flex;
@@ -115,6 +124,7 @@
 .event .textbox .boxes_wrap {
     display: flex;
     gap: 72px;
+    padding-top: 20px;
 }
 
 .whitebox_wrap {
@@ -124,7 +134,7 @@
 .boxes_wrap .whitebox {
     width: 202px;
     height: 116px;
-    background-color: #fff;
+    background-color: #e0e0e0;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -138,20 +148,56 @@
 .boxes_wrap .whitebox img {
     display: block;
 }
+
+
 .whitebox_wrap .hide {
-    width: 156px;
-    height: 48px;
+    display: none;
+    text-align: center;
     background-color: #fff;
     border-radius: 8px;
     margin: auto;
-    /* position: absolute;
-    bottom: 0;
-    right: 0; */
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    height: 56px;
+    line-height: 56px;
+    width: 100%;
 }
 
-.solution {}
-.solution .background {}
-.solution .background img {}
-.solution .background .textbox {}
+/* .whitebox::before {
+    display: block;
+    width: 0;
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    border-width: 0 8px 10px;
+    background-color: #fff;
+} */
+
+.whitebox_wrap:hover .whitebox {
+    background-color: #fff;
+}
+.whitebox_wrap:hover .hide {
+    display: block;
+    transition: all 0.3s;
+}
+.solution {
+   /* width: 1920px; */
+   height: 100%;
+}
+.solution .background {
+    display: flex;
+    gap: 30px;
+    padding-top: 266px;
+    padding-bottom: 180px;
+}
+.solution .background img {
+    display: none;
+    width: 100%;
+}
+.solution .background .textbox {
+    margin-left: 310px;
+}
 .solution .background .textbox h3 {}
 .solution .background .textbox span {}
