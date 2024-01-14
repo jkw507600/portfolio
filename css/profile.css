@@ -2,17 +2,10 @@
     display: flex;
 }
 
-/* .aboutme img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-} */
-
 .myvideo {
 }
 
-.myvideo img {
+.myvideo video {
     display: block;
     position: -webkit-sticky;
     position: sticky;
@@ -37,7 +30,6 @@
     align-items: center;
     justify-content: center;
     position: relative;
-
 }
 
 .logo_header img {
@@ -47,23 +39,18 @@
     margin-left: auto;
 }
 
-.logo_header .pocket {
-    
+.pocket img.overFlip {
+    opacity: 0;
+    transition: all 0.3s;
 }
-
-.logo_header .pocket:before  {
-    /* display: none; */
-    position: absolute;
-    top: 0;
-    right: 20%;
-    z-index: 10;
-    content: '';
-    background: url(../images/pocket_hover-1.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size : contain;
-    width: 185px;
-    height: 108px;
+  
+.pocket:hover img.show {
+    opacity: 0;
+    transition: all 0.3s;
+}
+  
+.pocket:hover img.overFlip {
+    opacity: 1;
 }
 
 .logo_header .pocket img {
@@ -71,15 +58,9 @@
     position: absolute;
     top: 16px;
     right: 30%;
-    width: 72px;
+    width: 127px;
 }
 
-/* .logo_header .pocket img:hover {
-    z-index: 1;
-    background-image: url(../images/pocket_hover.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-} */
 
 .logo_header h2 {
     font-family: 'Lemon', serif;
@@ -164,6 +145,10 @@
     border-radius: 18px;
 }
 
+.titlebox.tags .tag:hover {
+    background-color: #222;
+    color: #fff;
+}
 
 .section.right .titlebox.long {
     width: 332px;

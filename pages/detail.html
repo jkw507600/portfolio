@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
@@ -66,7 +66,17 @@
                     </div>
                 </div>
             </div>
-            <div class="banner"><img src="../images/banner_hyundai.png" alt=""></div>
+            <div class="banner swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="../images/banner-1.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="../images/banner-2.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="../images/banner-3.jpg" alt=""></div>
+                </div>
+                <div class="arrows">
+                    <i class="xi-angle-left next"></i>
+                    <i class="xi-angle-right prev"></i>
+                </div>
+            </div>
             <div class="reason">
                 <img src="../images/circle_logo.png" alt="">
                 <div class="textbox">
@@ -174,6 +184,15 @@
 		}
 	});
 });
+</script>
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".prev",
+        prevEl: ".next",
+      },
+    });
 </script>
 
 
