@@ -47,13 +47,19 @@
 }
 
 .grid .grid-item .photo {
-    /* width: 413px;
-    height: 413px; */
+    width: 413px;
+    height: 413px;
+    overflow: hidden;
+}
+
+.grid .grid-item .photo img:hover {
+    transform: scale(1.1);
 }
 
 .grid .grid-item .photo img {
     display: block;
     width: 100%;
+    transform: scale(1);
 }
 .grid .grid-item .titles {
     padding-top: 14px;

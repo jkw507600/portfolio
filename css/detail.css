@@ -6,6 +6,10 @@
     height: 100%;
 }
 
+.view.app {
+    padding-bottom: initial; 
+}
+
 .big_title {
     display: flex;
     align-items: center;
@@ -38,22 +42,23 @@
     padding-right: 4px;
 }
 
-.main_title .title {
+.title {
     display: flex;
     gap: 15px;
     align-items: center;
     padding-bottom: 30px;
 }
 
-.main_title .title p {
+.title p {
+    line-height: 1.2;
     font-size: 14px;
-    padding: 6px 10px;
+    padding: 7px 10px;
     background-color: #C8E3C6;
     border-radius: 30px;
     color: #222;
 }
 
-.main_title h3 {
+.title h3 {
     font-size: 28px;
     font-weight: normal;
     line-height: 1.4;
@@ -142,7 +147,6 @@
     font-size: 36px;
     font-weight: bold;
     line-height: 1.4;
-    padding-bottom: 25px;
 }
 .reason .textbox p {
     font-size: 16px;
