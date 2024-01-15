@@ -53,11 +53,11 @@ body {
 
 .header .gnb li {}
 
-.header .gnb li a {
+.gnb li a {
     display: block;
 }
 
-.header .gnb li a.active {
+.menu_link.active > a {
     font-weight: bold;
 }
 

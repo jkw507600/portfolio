@@ -2,7 +2,20 @@
     <img src="../images/cilantro_header_logo.png" alt="">
 </div>
 <ul class="gnb">
-    <li><a href="#" class="active">Home</a></li>
-    <li class="pro"><a href="">Profile</a></li>
-    <li><a href="#">Works</a></li>
+    <li class="menu_link"><a href="../pages/main.html">Home</a></li>
+    <li class="menu_link"><a href="../pages/profile.html">Profile</a></li>
+    <li class="menu_link"><a href="../pages/works.html">Works</a></li>
 </ul>
+
+<script>
+    var menu = $('.gnb li')
+    var str = $(location).attr('href')
+
+    if (str.includes('main')) {
+        menu[0].classList.add('active')
+    } else if (str.includes('profile')) {
+        menu[1].classList.add('active')
+    } else {
+        menu[2].classList.add('active')
+    }
+</script>

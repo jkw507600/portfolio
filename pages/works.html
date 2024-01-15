@@ -7,6 +7,7 @@
     <title>portfolio_works</title>
     <link rel="stylesheet" href="../css/works.css">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/detail.css">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
@@ -28,144 +29,338 @@
         <div class="container">
             <div class="btns">
                 <button data-filter="*" class="active">All</button>
-                <button data-filter=".UI / UX">UI / UX</button>
-                <button data-filter=".Graphic">Graphic</button>
-                <button data-filter=".3d Mockup">3d Mockup</button>
+                <button data-filter=".UIUX">UI / UX</button>
+                <button data-filter=".Gr">Graphic</button>
+                <button data-filter=".3d">3d Mockup</button>
             </div>
             <div class="grid">
-                <!-- grid로 나눠진 덩어리  -->
+                <!-- 1 -->
+                <div class="grid-item 3d">
+                    <div class="photo">
+                        <a href="#"><img src="../images/list_01.jpg" alt=""></a>
+                    </div>
+                    <div class="titles">
+                        <div class="name">
+                            <h3>공원 디자인</h3>
+                        </div>
+                        <div class="des">
+                            <p>퍼블릭 디자인</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item 3d">
+                    <div class="photo">
+                        <a href="#"><img src="../images/list_02.jpg" alt=""></a>
+                    </div>
+                    <div class="titles">
+                        <div class="name">
+                            <h3>러쉬 팝업 스토어</h3>
+                        </div>
+                        <div class="des">
+                            <p>인테리어 디자인</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item Gr">
+                    <div class="photo">
+                        <a href="#"><img src="../images/list_03.jpg" alt=""></a>
+                    </div>
+                    <div class="titles">
+                        <div class="name">
+                            <h3>쇼케이스 도안 디자인</h3>
+                        </div>
+                        <div class="des">
+                            <p>맞춤 제작 디자인</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="grid-item Gr">
+                    <div class="photo">
+                        <a href="#"><img src="../images/list_04.jpg" alt=""></a>
+                    </div>
+                    <div class="titles">
+                        <div class="name">
+                            <h3>이메일 캠페인</h3>
+                        </div>
+                        <div class="des">
+                            <p>독립기념일 행사</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item Gr" id="showModal">
+                    <div class="photo">
+                        <a href="#"><img src="../images/list_05.jpg" alt=""></a>
+                    </div>
+                    <div class="titles">
+                        <div class="name">
+                            <h3>이메일 캠페인</h3>
+                        </div>
+                        <div class="des">
+                            <p>맞춤 제작 디자인</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item Gr">
+                    <div class="photo">
+                        <a href="#"><img src="../images/list_06.jpg" alt=""></a>
+                    </div>
+                    <div class="titles">
+                        <div class="name">
+                            <h3>이메일 캠페인</h3>
+                        </div>
+                        <div class="des">
+                            <p>아이템 홍보</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 7 -->
+                <div class="grid-item Gr">
+                    <div class="photo">
+                        <a href="#"><img src="../images/list_07.jpg" alt=""></a>
+                    </div>
+                    <div class="titles">
+                        <div class="name">
+                            <h3>이메일 캠페인</h3>
+                        </div>
+                        <div class="des">
+                            <p>연말 세일 행사</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item Gr">
+                    <div class="photo">
+                        <a href="#"><img src="../images/list_08.jpg" alt=""></a>
+                    </div>
+                    <div class="titles">
+                        <div class="name">
+                            <h3>이메일 캠페인</h3>
+                        </div>
+                        <div class="des">
+                            <p>아이템 홍보</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item Gr">
+                    <div class="photo">
+                        <a href="#"><img src="../images/list_09.jpg" alt=""></a>
+                    </div>
+                    <div class="titles">
+                        <div class="name">
+                            <h3>이메일 캠페인</h3>
+                        </div>
+                        <div class="des">
+                            <p>연말 세일 행사</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 10 -->
+                <div class="grid-item UIUX">
+                    <div class="photo">
+                        <a href="#"><img src="../images/list_10.jpg" alt=""></a>
+                    </div>
+                    <div class="titles">
+                        <div class="name">
+                            <h3>어플리케이션 리디자인</h3>
+                        </div>
+                        <div class="des">
+                            <p>감정 기록 앱 디자인</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item UIUX">
+                    <div class="photo">
+                        <a href="#"><img src="../images/list_11.jpg" alt=""></a>
+                    </div>
+                    <div class="titles">
+                        <div class="name">
+                            <h3>웹 사이트 클론 </h3>
+                        </div>
+                        <div class="des">
+                            <p>이니스프리</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item UIUX">
+                    <div class="photo">
+                        <a href="../pages/detail.html"><img src="../images/list_12.jpg" alt=""></a>
+                    </div>
+                    <div class="titles">
+                        <div class="name">
+                            <h3>웹 사이트 클론</h3>
+                        </div>
+                        <div class="des">
+                            <p>현대 카드</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 13 -->
+                <div class="grid-item UIUX">
+                    <div class="photo">
+                        <a href="#"><img src="../images/list_13.jpg" alt=""></a>
+                    </div>
+                    <div class="titles">
+                        <div class="name">
+                            <h3>웹 사이트 제작</h3>
+                        </div>
+                        <div class="des">
+                            <p>나우 디스플레이</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item 3d">
+                    <div class="photo">
+                        <a href="#"><img src="../images/list_14.jpg" alt=""></a>
+                    </div>
+                    <div class="titles">
+                        <div class="name">
+                            <h3>토이 디퓨저</h3>
+                        </div>
+                        <div class="des">
+                            <p>제품 디자인</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item 3d">
+                    <div class="photo">
+                        <a href="#"><img src="../images/list_15.jpg" alt=""></a>
+                    </div>
+                    <div class="titles">
+                        <div class="name">
+                            <h3>컴팩트 킥보드</h3>
+                        </div>
+                        <div class="des">
+                            <p>제품 디자인</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 16 -->
+                <div class="grid-item Gr">
+                    <div class="photo">
+                        <a href="#"><img src="../images/list_16.jpg" alt=""></a>
+                    </div>
+                    <div class="titles">
+                        <div class="name">
+                            <h3>홈페이지 배너</h3>
+                        </div>
+                        <div class="des">
+                            <p>아이템 홍보</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item Gr">
+                    <div class="photo">
+                        <a href="#"><img src="../images/list_17.jpg" alt=""></a>
+                    </div>
+                    <div class="titles">
+                        <div class="name">
+                            <h3>홈페이지 배너</h3>
+                        </div>
+                        <div class="des">
+                            <p>아이템 홍보</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item Gr">
+                    <div class="photo">
+                        <a href="#"><img src="../images/list_18.jpg" alt=""></a>
+                    </div>
+                    <div class="titles">
+                        <div class="name">
+                            <h3>홈페이지 배너</h3>
+                        </div>
+                        <div class="des">
+                            <p>아이템 홍보</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 19 -->
+                <div class="grid-item Gr">
+                    <div class="photo">
+                        <a href="#"><img src="../images/list_19.jpg" alt=""></a>
+                    </div>
+                    <div class="titles">
+                        <div class="name">
+                            <h3>홍보물 제작</h3>
+                        </div>
+                        <div class="des">
+                            <p>롯데워터파크 서포터즈 활동</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item Gr">
+                    <div class="photo">
+                        <a href="#"><img src="../images/list_20.jpg" alt=""></a>
+                    </div>
+                    <div class="titles">
+                        <div class="name">
+                            <h3>카달로그 제작</h3>
+                        </div>
+                        <div class="des">
+                            <p>아이템 홍보</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item UIUX">
+                    <div class="photo">
+                        <a href="#"><img src="../images/list_21.jpg" alt=""></a>
+                    </div>
+                    <div class="titles">
+                        <div class="name">
+                            <h3>웹 사이트 클론</h3>
+                        </div>
+                        <div class="des">
+                            <p>대한항공</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="footer">
             <!-- footer -->
         </div>
     </div>
-
+    <div class="dimm">
+        <div class="modal">
+            <div class="board">
+                <div class="big_title">
+                    <h2>이메일 캠페인</h2>
+                    <div class="close" id="closeModal">
+                        <img src="../images/icon_close.png" alt="">
+                    </div>
+                </div>
+                <div class="main_title">
+                    <div class="title">
+                        <h3>맞춤 제작 디자인</h3>
+                        <p>Graphic</p>
+                    </div>
+                    <div class="textbox">
+                        <div class="leftbox">
+                            <div class="texts">
+                                <p>커스텀 우드 및 쇼케이스 디자인을 홍보하기 위한 프로모션 이벤트 입니다.</p>
+                            </div>
+                        </div>
+                        <div class="rightbox">
+                            <div class="info">
+                                <h4>기여도</h4>
+                                <p>개인 작업</p>
+                            </div>
+                            <div class="info">
+                                <h4>프로그램</h4>
+                                <p>Adobe Illustrator, stripo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mainphoto">
+                <img src="../images/email_campaign_1.jpg" alt="">
+            </div>
+        </div>
+    </div>
 </body>
 
 <script>
-    var itemdata = [
-        {
-            img: '../images/list_01.jpg',
-            name: '공원 디자인',
-            des: '퍼블릭 디자인',
-        },
-        {
-            img: '../images/list_02.jpg',
-            name: '러쉬 팝업 스토어',
-            des: '인테리어 디자인',
-        },
-        {
-            img: '../images/list_03.jpg',
-            name: '쇼케이스 도안 디자인',
-            des: '맞춤 제작 디자인',
-        },
-        {
-            img: '../images/list_04.jpg',
-            name: '이메일 캠페인',
-            des: '독립기념일 행사',
-        },
-        {
-            img: '../images/list_05.jpg',
-            name: '이메일 캠페인',
-            des: '맞춤 제작 디자인',
-        },
-        {
-            img: '../images/list_06.jpg',
-            name: '이메일 캠페인',
-            des: '아이템 홍보',
-        },
-        {
-            img: '../images/list_07.jpg',
-            name: '이메일 캠페인',
-            des: '연말 세일 행사',
-        },
-        {
-            img: '../images/list_08.jpg',
-            name: '이메일 캠페인',
-            des: '아이템 홍보',
-        },
-        {
-            img: '../images/list_09.jpg',
-            name: '이메일 캠페인',
-            des: '연간 세일 행사',
-        },
-        {
-            img: '../images/list_10.jpg',
-            name: '어플리케이션 리디자인',
-            des: '감정 기록 앱 디자인',
-        },
-        {
-            img: '../images/list_11.jpg',
-            name: '웹 사이트 클론 ',
-            des: '이니스프리',
-        },
-        {
-            img: '../images/list_12.jpg',
-            name: '웹 사이트 클론',
-            des: '현대 카드',
-        },
-        {
-            img: '../images/list_13.jpg',
-            name: '웹 사이트 제작',
-            des: '나우 디스플레이',
-        },
-        {
-            img: '../images/list_14.jpg',
-            name: '토이 디퓨저',
-            des: '제품 디자인',
-        },
-        {
-            img: '../images/list_15.jpg',
-            name: '컴팩트 킥보드',
-            des: '제품 디자인',
-        },
-        {
-            img: '../images/list_16.jpg',
-            name: '홈페이지 배너',
-            des: '아이템 홍보',
-        },
-        {
-            img: '../images/list_17.jpg',
-            name: '홈페이지 배너',
-            des: '아이템 홍보',
-        },
-        {
-            img: '../images/list_18.jpg',
-            name: '홍보물 제작',
-            des: '롯데워터파크 서포터즈 활동',
-        },
-        {
-            img: '../images/list_19.jpg',
-            name: '카달로그 제작',
-            des: '아이템 홍보',
-        },
-        {
-            img: '../images/list_20.jpg',
-            name: '카달로그 제작',
-            des: '아이템 홍보',
-        },
-        {
-            img: '../images/list_21.jpg',
-            name: '웹 사이트 클론',
-            des: '대한 항공',
-        },
-    ]
-
-    var list = $('.grid')
-    $(itemdata).each(function (index, it) {
-        // console.log(it.name)
-        var row = `<div class='grid-item'>
-                    <div class="photo"><a><img src="${it.img}" alt=""></a></div>
-                    <div class="titles">
-                        <div class="name"><h3>${it.name}</h3></div>
-                        <div class="des"><p>${it.des}</p></div>
-                    </div>
-                   </div>`
-        list.append(row)
-    })
-
-
     $(function () {
         var $grid = $('.grid').isotope({
             itemSelector: '.grid-item',
@@ -194,10 +389,32 @@
 </script>
 
 <script>
+    $('.btns button').click(function () {
+        $('.btns button').removeClass('active');
+        if ($('.btns button').hasClass('active')) {
+        } else {
+            $(this).addClass('active');
+        }
+    });
+</script>
+
+<script>
     $(function () {
         $('.footer').load('../inc/footer.html')
         $('.header').load('../inc/header.html')
     })
+</script>
+
+<script>
+    // modal open close
+    $('#showModal').click(function () {
+        $('.dimm').show()
+    })
+
+    $('#closeModal').click(function () {
+        $('.dimm').hide()
+    })
+
 </script>
 
 

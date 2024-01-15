@@ -29,15 +29,21 @@
                 <div class="big_title">
                     <h2>웹 사이트 클론</h2>
                     <div class="back">
-                        <a href=""><img src="../images/back.png" alt=""></a>
+                        <a href="../pages/works.html"><i class="xi-angle-left"></i>BACK</a>
                     </div>
                 </div>
                 <div class="main_title">
-                    <h3>현대카드</h3>
+                    <div class="title">
+                        <h3>현대카드</h3>
+                        <p>UI/UX</p>
+                    </div>
                     <div class="textbox">
                         <div class="leftbox">
                             <div class="texts">
-                                <p>현대카드는 금융회사로 보험, 카드 등의 상품을 매개로 고객에게 서비스를 제공하는 일이 본업이다. 전용 서체 유앤아이Youandi를 개발해 커뮤니케이션 수단으로 활용했으며 현대카드를 담고 있어서 특별하다. 전용 서체를 일관되게 사용하게 되면서, 현대카드는 통일된 브랜드 경험을 소비자들에게 전달할 수 있다. 브랜드의 가치를 잘 이해하고 전달하여 디자인 또한 홈페이지에 잘 녹여내고 있다. 현대카드 고유의 아이덴티티를 잘 보여주며 위트있고 혁신적인 디자인을 강조하고 통일성을 중요하게 보고 있다.</p>
+                                <p>현대카드는 금융회사로 보험, 카드 등의 상품을 매개로 고객에게 서비스를 제공하는 일이 본업이다. 전용 서체 유앤아이Youandi를 개발해 커뮤니케이션
+                                    수단으로 활용했으며 현대카드를 담고 있어서 특별하다. 전용 서체를 일관되게 사용하게 되면서, 현대카드는 통일된 브랜드 경험을 소비자들에게 전달할 수
+                                    있다. 브랜드의 가치를 잘 이해하고 전달하여 디자인 또한 홈페이지에 잘 녹여내고 있다. 현대카드 고유의 아이덴티티를 잘 보여주며 위트있고 혁신적인
+                                    디자인을 강조하고 통일성을 중요하게 보고 있다.</p>
                             </div>
                             <div class="links">
                                 <a href="" class="link"><img src="../images/icon_figma.png" alt=""></a>
@@ -68,9 +74,9 @@
             </div>
             <div class="banner swiper mySwiper">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide"><img src="../images/banner-1.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="../images/banner-2.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="../images/banner-3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="../images/banner-1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="../images/banner-2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="../images/banner-3.jpg" alt=""></div>
                 </div>
                 <div class="arrows">
                     <i class="xi-angle-left next"></i>
@@ -89,15 +95,15 @@
             </div>
             <div class="video_boxes">
                 <div class="video">
-                    <video src="../images/slide-1.mp4" type="video/mp4" ></video>
+                    <video src="../images/slide-1.mp4" type="video/mp4"></video>
                     <span>Slider</span>
                 </div>
                 <div class="video">
-                    <video src="../images/slider.mp4" type="video/mp4" ></video>
+                    <video src="../images/slider.mp4" type="video/mp4"></video>
                     <span>Transition</span>
                 </div>
                 <div class="video">
-                    <video src="../images/slider.mp4" type="video/mp4" ></video>
+                    <video src="../images/slider.mp4" type="video/mp4"></video>
                     <span>Modal</span>
                 </div>
             </div>
@@ -174,24 +180,24 @@
     })
 </script>
 <script>
-    $(function(){
-	$(window).scroll(function(){
-		var videoTop = $('video').offset().top;
-		var video = $("video");
-        
-		if( $(document).scrollTop() > videoTop ){
-			video.get(0).play();
-		}
-	});
-});
+    $(function () {
+        $(window).scroll(function () {
+            var videoTop = $('video').offset().top;
+            var video = $("video");
+
+            if ($(document).scrollTop() > videoTop) {
+                video.get(0).play();
+            }
+        });
+    });
 </script>
 
 <script>
     var swiper = new Swiper(".mySwiper", {
-      navigation: {
-        nextEl: ".prev",
-        prevEl: ".next",
-      },
+        navigation: {
+            nextEl: ".prev",
+            prevEl: ".next",
+        },
     });
 </script>
 

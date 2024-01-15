@@ -58,7 +58,7 @@
     position: absolute;
     top: 16px;
     right: 30%;
-    width: 127px;
+    width: 175px
 }
 
 
@@ -138,9 +138,9 @@
     align-items: center;
     height: 25px;
     line-height: 25px;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
-    padding: 4px 8px;
+    padding: 4px 6px;
     border: 1px solid #222;
     border-radius: 18px;
 }
