@@ -85,19 +85,20 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 1000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* display: none; */
 }
 
 .dimm .modal {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1100px;
     height: 100%;
     overflow-y: auto;
     z-index: 10000;
     position: relative;
     background-color: #fff;
-    padding: 60px 200px;
+    padding: 60px 190px;
 }
 
 .dimm .board {

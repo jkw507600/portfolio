@@ -154,26 +154,46 @@
     line-height: 1.6;
 }
 
+.vide_wrap {
+    width: 100%;
+    height: 260px;
+    margin-bottom: 300px;
+}
+
 .video_boxes {
     display: flex;
     gap: 30px;
-    padding-bottom: 250px;
-}
-.video_boxes .video  {}
 
-.video_boxes .video video {
-    width: 413px;
-    background-color: #eee;
-    border-radius: 18px;
 }
-.video_boxes .video span {
-    padding-top: 15px;
-    font-size: 16px;
+.video_boxes .video_inner  {
+    overflow: hidden;
+    width: 413px;
+    height: 230px;
+    border-radius: 18px;
+    border: 1px solid #eee;
+
+}
+
+.video_boxes .video_inner video {
+    border-radius: 18px;
+    object-fit: cover;
+    transform: scale(1.45);
+    display: block;
+}
+
+.text_boxes {
+    padding-top: 8px;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.text_boxes span {
+    font-weight: bold;
+    
 }
 .event {
-    background-color: #eee;
+    background-color: #B1D1AE;
     height: 528px;
 }
 .event .textbox {
@@ -192,12 +212,13 @@
 
 .whitebox_wrap {
     position: relative;
+    cursor: pointer;
 }
 
 .boxes_wrap .whitebox {
     width: 202px;
     height: 116px;
-    background-color: #e0e0e0;
+    background-color: #C8E3C6;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -254,18 +275,19 @@
 }
 .solution .background {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     gap: 30px;
     padding-top: 266px;
     padding-bottom: 360px;
     width: 1300px;
     margin: 0 auto;
+    position: relative;
 }
 
 
-.solution .background::after {
+.solution::after {
     content: '';
-    top: 650px;
+    top: 420px;
     left: 0;
     position: absolute;
     width: 100%;
@@ -302,6 +324,38 @@
 .solution .background .textbox > p {
     font-size: 14px;
     padding-top: 14px;
+}
+
+.line_event img.line01, .line_event img.line02, .line_event img.line03, .line_event img.line04 {
+    transition: all 0.3s;
+}
+
+.line_event img.line01 {
+    position: absolute;
+    top: 20%;
+    left: 14%;
+    z-index: 100;
+}
+
+.line_event img.line02 {
+    position: absolute;
+    top: 9%;
+    left: 45%;
+    z-index: 100;
+}
+
+.line_event img.line03 {
+    position: absolute;
+    top: 41%;
+    left: 41%;
+    z-index: 100;
+}
+
+.line_event img.line04 {
+    position: absolute;
+    top: 52%;
+    left: 41%;
+    z-index: 100;
 }
 
 .wrap.color {
