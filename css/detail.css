@@ -33,6 +33,7 @@
     justify-content: center;
     padding: 7px 10px;
     font-size: 14px;
+    font-weight: bold;
     background-color: #C8E3C6;
     border-radius: 30px;
     color: #222;
@@ -280,18 +281,25 @@
 .solution .background .textbox {
     z-index: 1;
     width: 413px;
-    height: 310px;
+    height: 350px;
     
 }
-.solution .background .textbox h3 {
+
+.solution .background .textbox .title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.solution .background .textbox .title h3 {
     font-size: 36px;
 }
-.solution .background .textbox span {
+.solution .background .textbox > span {
     font-size: 16px;
     font-weight: bold;
 }
 
-.solution .background .textbox p {
+.solution .background .textbox > p {
     font-size: 14px;
     padding-top: 14px;
 }

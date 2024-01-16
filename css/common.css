@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon&family=Noto+Sans+KR:wght@300;400;600&display=swap');
+
+*{
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-size: 16px;
+    line-height: 24px;
+    color: #222;
+    font-family: 'Noto Sans KR', sans-serif;
+    
+}
+
+.wrap {
+    width: 100%;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+}
+
+.header .logo {
+    padding-left: 70px;
+}
+
+.header .logo img {
+    display: block;
+    width: 160px;
+}
+.header .gnb {
+    display: flex;
+    gap: 68px;
+    padding-right: 70px;
+}
+
+.gnb li a {
+    display: block;
+}
+
+.menu_link.active > a {
+    font-weight: bold;
+}
+
+/* footer */
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #222;
+    color: #fff;
+    height: 80px;
+}
+
+.footer .f_logo {
+    padding-left: 90px;
+}
+.footer .f_logo img {
+    width: 130px;
+}
+
+.footer .f_info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+    padding-right: 100px;
+}
+
+.footer .f_info p {
+    font-size: 10px;
+    line-height: 1.2;
+}
