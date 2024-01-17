@@ -7,10 +7,10 @@
     <title>popup</title>
     <link rel="stylesheet" href="../css/works.css">
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
-    <link rel="stylesheet" href="../css/magnific-popup.css">
     <link rel="stylesheet" href="../css/detail.css">
     <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/magnific-popup.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
@@ -25,9 +25,9 @@
 </head>
 
 <body>
-    <!-- <a class="simple-ajax-popup-align-top" href="site-assets/ajax/test-ajax.html">이메일 캠페인</a><br>
-    <a class="simple-ajax-popup" href="site-assets/ajax/test-ajax-2.html">Load another content via ajax</a> -->
-    <div class="wrap"></div>
+    <div class="wrap">
+        <!-- works -->
+    </div>
     <div class="dimm">
         <div class="modal">
             <div class="board">
@@ -62,7 +62,7 @@
                 </div>
             </div>
             <div class="mainphoto">
-                <img src="../images/email_campaign_1.jpg" alt="">
+                <img src="../images/email_campaign_1.png" alt="">
             </div>
         </div>
     </div>
@@ -71,20 +71,23 @@
 
 <script>
     $(document).ready(function () {
-
-        $('.ajax-popup-link').magnificPopup({
-            type: 'image',
-            alignTop: true,
-            overflowY: 'scroll', // as we know that popup content is tall we set scroll overflow by default to avoid jump
-            closeOnBgClick: true
-        });
-
-        $('.ajax-popup-link').magnificPopup({
-            type: 'ajax',
-            closeOnBgClick: true
+        $('.dimm').on('click', function (e) {
+            // 팝업 내부 (.modal)를 클릭한 경우 닫지 않음
+            if (!$(e.target).closest('.modal').length) {
+                // 팝업 닫기
+                window.location.href = '/pages/works.html';
+            }
         });
     })
+</script>
 
+
+
+<script>
+    $(function () {
+        // 외부 페이지를 불러옴
+        $('.wrap').load('../pages/works.html');
+    })
 </script>
 
 

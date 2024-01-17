@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>popup</title>
+    <link rel="stylesheet" href="../css/works.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
+    <link rel="stylesheet" href="../css/magnific-popup.css">
+    <link rel="stylesheet" href="../css/detail.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="../js/jquery.magnific-popup.min.js"></script>
+</head>
+
+<body>
+    <div class="wrap"></div>
+    <div class="dimm">
+        <div class="modal">
+            <div class="board">
+                <div class="big_title">
+                    <h2>이메일 캠페인</h2>
+                    <div class="close">
+                        <a href="../pages/works.html" id="closeModal"><img src="../images/icon_close.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="main_title">
+                    <div class="title">
+                        <h3>아이템 홍보</h3>
+                        <p>Graphic</p>
+                    </div>
+                    <div class="textbox">
+                        <div class="leftbox">
+                            <div class="texts">
+                                <p>Store Displays 아이템들을 홍보하기 위한 프로모션 이벤트 입니다.</p>
+                            </div>
+                        </div>
+                        <div class="rightbox">
+                            <div class="info">
+                                <h4>기여도</h4>
+                                <p>개인 작업</p>
+                            </div>
+                            <div class="info">
+                                <h4>프로그램</h4>
+                                <p>Adobe Illustrator, stripo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mainphoto">
+                <img src="../images/email_campaign_2.png" alt="">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    $(document).ready(function () {
+
+        $('.ajax-popup-link').magnificPopup({
+            type: 'image',
+            alignTop: true,
+            overflowY: 'scroll', // as we know that popup content is tall we set scroll overflow by default to avoid jump
+            closeOnBgClick: true
+        });
+
+        $('.ajax-popup-link').magnificPopup({
+            type: 'ajax',
+            closeOnBgClick: false
+        });
+
+        $('.dimm').on('click', function (e) {
+            // 팝업 내부 (.modal)를 클릭한 경우 닫지 않음
+            if (!$(e.target).closest('.modal').length) {
+                // 팝업 닫기
+                window.location.href = '/pages/works.html';
+            }
+        });
+    })
+
+</script>
+
+
+
+</html>
