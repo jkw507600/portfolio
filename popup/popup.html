@@ -66,7 +66,6 @@
             </div>
         </div>
     </div>
-
 </body>
 
 <script>
@@ -81,15 +80,23 @@
     })
 </script>
 
-
-
 <script>
     $(function () {
+        $('.ajax-popup-link').magnificPopup({
+            type: 'image',
+            alignTop: true,
+            overflowY: 'scroll', // as we know that popup content is tall we set scroll overflow by default to avoid jump
+            closeOnBgClick: true
+        });
+
+        $('.ajax-popup-link').magnificPopup({
+            type: 'ajax',
+            closeOnBgClick: false
+        });
+
         // 외부 페이지를 불러옴
         $('.wrap').load('../pages/works.html');
     })
 </script>
-
-
 
 </html>

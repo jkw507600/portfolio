@@ -70,7 +70,18 @@
 
 <script>
     $(document).ready(function () {
+        $('.dimm').on('click', function (e) {
+            // 팝업 내부 (.modal)를 클릭한 경우 닫지 않음
+            if (!$(e.target).closest('.modal').length) {
+                // 팝업 닫기
+                window.location.href = '/pages/works.html';
+            }
+        });
+    })
+</script>
 
+<script>
+    $(function () {
         $('.ajax-popup-link').magnificPopup({
             type: 'image',
             alignTop: true,
@@ -83,17 +94,10 @@
             closeOnBgClick: false
         });
 
-        $('.dimm').on('click', function (e) {
-            // 팝업 내부 (.modal)를 클릭한 경우 닫지 않음
-            if (!$(e.target).closest('.modal').length) {
-                // 팝업 닫기
-                window.location.href = '/pages/works.html';
-            }
-        });
+        // 외부 페이지를 불러옴
+        $('.wrap').load('../pages/works.html');
     })
-
 </script>
-
 
 
 </html>
