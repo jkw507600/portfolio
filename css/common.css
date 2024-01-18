@@ -34,6 +34,17 @@ body {
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #eee;
+    background-color: #fff;
+}
+
+.fixed {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    transition: all 0.3s;
 }
 
 .header .logo {

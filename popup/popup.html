@@ -7,10 +7,10 @@
     <title>popup</title>
     <link rel="stylesheet" href="../css/works.css">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
+    <link rel="stylesheet" href="../css/magnific-popup.css">
     <link rel="stylesheet" href="../css/detail.css">
     <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/magnific-popup.css">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
@@ -25,9 +25,7 @@
 </head>
 
 <body>
-    <div class="wrap">
-        <!-- works -->
-    </div>
+    <div class="wrap"></div>
     <div class="dimm">
         <div class="modal">
             <div class="board">
@@ -66,22 +64,11 @@
             </div>
         </div>
     </div>
+
 </body>
 
 <script>
     $(document).ready(function () {
-        $('.dimm').on('click', function (e) {
-            // 팝업 내부 (.modal)를 클릭한 경우 닫지 않음
-            if (!$(e.target).closest('.modal').length) {
-                // 팝업 닫기
-                window.location.href = '/pages/works.html';
-            }
-        });
-    })
-</script>
-
-<script>
-    $(function () {
         $('.ajax-popup-link').magnificPopup({
             type: 'image',
             alignTop: true,
@@ -94,9 +81,16 @@
             closeOnBgClick: false
         });
 
-        // 외부 페이지를 불러옴
-        $('.wrap').load('../pages/works.html');
+        $('.dimm').on('click', function (e) {
+            // 팝업 내부 (.modal)를 클릭한 경우 닫지 않음
+            if (!$(e.target).closest('.modal').length) {
+                // 팝업 닫기
+                window.location.href = '/pages/works.html';
+            }
+        });
     })
+
 </script>
+
 
 </html>

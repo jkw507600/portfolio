@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio_detail_app</title>
+    <title>cilantro</title>
     <link rel="stylesheet" href="../css/detail.css">
     <link rel="stylesheet" href="../css/works.css">
     <link rel="stylesheet" href="../css/main.css">
@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="icon" href="../images/favicon-32x32.png">
 
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -88,6 +89,7 @@
                 </div>
             </div>
         </div>
+        <button id="top-btn"> <img src="../images/icon_scrollTop.png" alt=""></button>
         <div class="footer"></div>
     </div>
 
@@ -98,6 +100,25 @@
         $('.header').load('../inc/header.html')
 
     })
+</script>
+
+<script>
+    $(document).ready(function () {
+        // Top 버튼 특정 스크롤높이에서만 보이기 / 숨기기
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                $('#top-btn').fadeIn();
+            } else {
+                $('#top-btn').fadeOut();
+            }
+        });
+
+        // Top 버튼 클릭시 페이지 상단으로 이동
+        $('#top-btn').click(function () {
+            $('html, body').animate({ scrollTop: 0 }, 800);
+            return false;
+        });
+    });
 </script>
 
 </html>

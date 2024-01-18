@@ -155,6 +155,8 @@
 }
 
 .vide_wrap {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 260px;
     margin-bottom: 300px;
@@ -163,8 +165,16 @@
 .video_boxes {
     display: flex;
     gap: 30px;
-
 }
+
+.video_boxes .video_inner.three video  {
+    transform: scale(1);
+}
+
+.video_boxes .video_inner.three {
+    display: block;
+}
+
 .video_boxes .video_inner  {
     overflow: hidden;
     width: 413px;
