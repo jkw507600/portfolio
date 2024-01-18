@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>popup</title>
+    <link rel="stylesheet" href="../css/works.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
+    <link rel="stylesheet" href="../css/magnific-popup.css">
+    <link rel="stylesheet" href="../css/detail.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="../js/jquery.magnific-popup.min.js"></script>
+</head>
+
+<body>
+    <div class="wrap"></div>
+    <div class="dimm">
+        <div class="modal">
+            <div class="board">
+                <div class="big_title">
+                    <h2>러쉬 팝업 스토어</h2>
+                    <div class="close">
+                        <a href="../pages/works.html" id="closeModal"><img src="../images/icon_close.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="main_title">
+                    <div class="title">
+                        <h3>인테리어 디자인</h3>
+                        <p>퍼블릭 디자인</p>
+                    </div>
+                    <div class="textbox">
+                        <div class="leftbox">
+                            <div class="texts">
+                                <p>러쉬는 신선한 천연 재료로 제품을 만드는 회사로, 강렬한 향과 다채로운 색상으로 유명합니다. 매장의 디자인은 러쉬의 핵심 가치를 반영하여 고객들에게
+                                    직접적이고 풍부한 체험을 제공합니다.외부는 자연적인 소재와 유리를 활용하여 포인트를 주었고, 내부는 깨끗한 시트와 현대적이면서도 세련된 분위기를
+                                    조성했습니다. 1층은 정원, 휴식 공간, 그리고 카페로, 2층은 휴식과 주방이 가능한 복층 구조이며. 3층에는 러쉬 매장, 체험 부스, 스파가 자리하여
+                                    고객들에게 다양한 경험을 선사합니다.</p>
+                            </div>
+                        </div>
+                        <div class="rightbox">
+                            <div class="info">
+                                <h4>기여도</h4>
+                                <p>개인 작업</p>
+                            </div>
+                            <div class="info">
+                                <h4>프로그램</h4>
+                                <p>Adobe Illustrator, SketchUp, KeyShot</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mainphoto">
+                <img src="../images/Lush_img.png" alt="">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    $(document).ready(function () {
+
+        $('.ajax-popup-link').magnificPopup({
+            type: 'image',
+            alignTop: true,
+            overflowY: 'scroll', // as we know that popup content is tall we set scroll overflow by default to avoid jump
+            closeOnBgClick: true
+        });
+
+        $('.ajax-popup-link').magnificPopup({
+            type: 'ajax',
+            closeOnBgClick: false
+        });
+
+        $('.dimm').on('click', function (e) {
+            // 팝업 내부 (.modal)를 클릭한 경우 닫지 않음
+            if (!$(e.target).closest('.modal').length) {
+                // 팝업 닫기
+                window.location.href = '/pages/works.html';
+            }
+        });
+    })
+
+</script>
+
+
+</html>
