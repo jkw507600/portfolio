@@ -11,15 +11,8 @@
     <link rel="stylesheet" href="../css/magnific-popup.css">
     <link rel="stylesheet" href="../css/detail.css">
     <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
-    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="../js/jquery.magnific-popup.min.js"></script>
 </head>
@@ -32,7 +25,7 @@
                 <div class="big_title">
                     <h2>컴팩트 킥보드</h2>
                     <div class="close">
-                        <a href="../pages/works.html" id="closeModal"><img src="../images/icon_close.png" alt=""></a>
+                        <a href="#" id="closeModal"><img src="../images/icon_close.png" alt=""></a>
                     </div>
                 </div>
                 <div class="main_title">
@@ -82,17 +75,17 @@
             closeOnBgClick: true
         });
 
-        $('.ajax-popup-link').magnificPopup({
-            type: 'ajax',
-            closeOnBgClick: false
-        });
-
         $('.dimm').on('click', function (e) {
             // 팝업 내부 (.modal)를 클릭한 경우 닫지 않음
             if (!$(e.target).closest('.modal').length) {
                 // 팝업 닫기
-                window.location.href = '/pages/works.html';
+                $('.modal').fadeOut();
             }
+        });
+
+        $('#closeModal').on('click', function (e) {
+            e.preventDefault();
+            $('.modal').fadeOut();
         });
     })
 
