@@ -111,7 +111,7 @@
 }
 
 .board {
-    width: 700px;
+    width: 1300px;
 }
 
 .board .big_title .close {
@@ -123,7 +123,7 @@
 }
 
 .board .textbox .leftbox {
-    width: 380px;
+    /* width: 380px; */
 }
 .mainphoto {
     width: 700px;
