@@ -76,9 +76,13 @@
 }
 
 /* dimm */
-
-.mfp-close-btn-in .mfp-close{
-    display: none;
+.modal .mfp-close{
+    /* display: none; */
+    position: absolute;
+    z-index: 10000;
+    top: 70px;
+    right: 200px;
+    font-size: 30px;
 }
 
 .dimm {
@@ -92,7 +96,7 @@
     display: none; */
 }
 
-.dimm .modal {
+.modal {
     position: fixed;
     top: 0;
     left: 50%;
@@ -106,7 +110,7 @@
     padding: 60px 190px;
 }
 
-.dimm .board {
+.board {
     width: 700px;
 }
 
@@ -114,14 +118,14 @@
     cursor: pointer;
 }
 
-.dimm .board .textbox {
+.board .textbox {
     gap: 40px;
 }
 
-.dimm .board .textbox .leftbox {
+.board .textbox .leftbox {
     width: 380px;
 }
-.dimm .mainphoto {
+.mainphoto {
     width: 700px;
     background-color: #f5f5f5;
     padding: 40px 0;
@@ -145,7 +149,7 @@
     width: 20px;
 }
 
-.dimm .mainphoto > img {
+.mainphoto > img {
     display: block;
     margin-right: auto;
     margin-left: auto;

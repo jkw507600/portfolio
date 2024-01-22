@@ -8,81 +8,43 @@
     <link rel="stylesheet" href="../css/works.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
-    <link rel="stylesheet" href="../css/magnific-popup.css">
     <link rel="stylesheet" href="../css/detail.css">
     <link rel="stylesheet" href="../css/common.css">
-
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="../js/jquery.magnific-popup.min.js"></script>
 </head>
 
 <body>
-    <div class="wrap"></div>
-    <div class="dimm">
-        <div class="modal">
-            <div class="board">
-                <div class="big_title">
-                    <h2>쇼케이스 도안 디자인</h2>
-                    <div class="close">
-                        <a href="#" id="closeModal"><img src="../images/icon_close.png" alt=""></a>
-                    </div>
-                </div>
-                <div class="main_title">
-                    <div class="title">
-                        <h3>맞춤 제작 디자인</h3>
-                        <p>Graphic</p>
-                    </div>
-                    <div class="textbox">
-                        <div class="leftbox">
-                            <div class="texts">
-                                <p>니스에 맞게 커스텀 쇼케이스 디자인 도안을 제작하였습니다.</p>
-                            </div>
-                        </div>
-                        <div class="rightbox">
-                            <div class="info">
-                                <h4>기여도</h4>
-                                <p>개인 작업</p>
-                            </div>
-                            <div class="info">
-                                <h4>프로그램</h4>
-                                <p>Adobe Illustrator</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div class="modal">
+        <div class="board">
+            <div class="big_title">
+                <h2>쇼케이스 도안 디자인</h2>
             </div>
-            <div class="mainphoto">
-                <img src="../images/showcase-design.png" alt="">
+            <div class="main_title">
+                <div class="title">
+                    <h3>맞춤 제작 디자인</h3>
+                    <p>Graphic</p>
+                </div>
+                <div class="textbox">
+                    <div class="leftbox">
+                        <div class="texts">
+                            <p>니스에 맞게 커스텀 쇼케이스 디자인 도안을 제작하였습니다.</p>
+                        </div>
+                    </div>
+                    <div class="rightbox">
+                        <div class="info">
+                            <h4>기여도</h4>
+                            <p>개인 작업</p>
+                        </div>
+                        <div class="info">
+                            <h4>프로그램</h4>
+                            <p>Adobe Illustrator</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        <div class="mainphoto">
+            <img src="../images/showcase-design.png" alt="">
+        </div>
     </div>
-
 </body>
-
-<script>
-    $(function () {
-        $('.ajax-popup-link').magnificPopup({
-            type: 'image',
-            alignTop: true,
-            overflowY: 'scroll', // as we know that popup content is tall we set scroll overflow by default to avoid jump
-            closeOnBgClick: true
-        });
-
-        $('.dimm').on('click', function (e) {
-            // 팝업 내부 (.modal)를 클릭한 경우 닫지 않음
-            if (!$(e.target).closest('.modal').length) {
-                // 팝업 닫기
-                $('.modal').fadeOut();
-            }
-        });
-
-        $('#closeModal').on('click', function (e) {
-            e.preventDefault();
-            $('.modal').fadeOut();
-        });
-    })
-</script>
-
-
 </html>

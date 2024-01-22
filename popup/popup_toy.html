@@ -8,82 +8,44 @@
     <link rel="stylesheet" href="../css/works.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
-    <link rel="stylesheet" href="../css/magnific-popup.css">
     <link rel="stylesheet" href="../css/detail.css">
     <link rel="stylesheet" href="../css/common.css">
-
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="../js/jquery.magnific-popup.min.js"></script>
 </head>
 
 <body>
-    <div class="wrap"></div>
-    <div class="dimm">
-        <div class="modal">
-            <div class="board">
-                <div class="big_title">
-                    <h2>토이 디퓨저</h2>
-                    <div class="close">
-                        <a href="#" id="closeModal"><img src="../images/icon_close.png" alt=""></a>
-                    </div>
-                </div>
-                <div class="main_title">
-                    <div class="title">
-                        <h3>캐릭터 디자인</h3>
-                        <p>Product</p>
-                    </div>
-                    <div class="textbox">
-                        <div class="leftbox">
-                            <div class="texts">
-                                <p>10대들을 위한 나만의 제품, 바로 '토이 디퓨저'입니다. 사춘기의 특유한 냄새와 불안함을 고려하여 디자인된 이 제품은 언제 어디서든 간편하게 사용할
-                                    수 있습니다. 자신만의 캐릭터를 만들수 있어 재미를 더해줍니다. 사춘기의 감성을 표현할 수 있는 작은 예술작품이 되어줄 것입니다.</p>
-                            </div>
-                        </div>
-                        <div class="rightbox">
-                            <div class="info">
-                                <h4>기여도</h4>
-                                <p>개인 작업</p>
-                            </div>
-                            <div class="info">
-                                <h4>프로그램</h4>
-                                <p>Adobe Illustrator, Rhino 3D, KeyShot</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div class="modal">
+        <div class="board">
+            <div class="big_title">
+                <h2>토이 디퓨저</h2>
             </div>
-            <div class="mainphoto">
-                <img src="../images/toy_pdf.png" alt="">
+            <div class="main_title">
+                <div class="title">
+                    <h3>캐릭터 디자인</h3>
+                    <p>Product</p>
+                </div>
+                <div class="textbox">
+                    <div class="leftbox">
+                        <div class="texts">
+                            <p>10대들을 위한 나만의 제품, 바로 '토이 디퓨저'입니다. 사춘기의 특유한 냄새와 불안함을 고려하여 디자인된 이 제품은 언제 어디서든 간편하게 사용할
+                                수 있습니다. 자신만의 캐릭터를 만들수 있어 재미를 더해줍니다. 사춘기의 감성을 표현할 수 있는 작은 예술작품이 되어줄 것입니다.</p>
+                        </div>
+                    </div>
+                    <div class="rightbox">
+                        <div class="info">
+                            <h4>기여도</h4>
+                            <p>개인 작업</p>
+                        </div>
+                        <div class="info">
+                            <h4>프로그램</h4>
+                            <p>Adobe Illustrator, Rhino 3D, KeyShot</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        <div class="mainphoto">
+            <img src="../images/toy_pdf.png" alt="">
+        </div>
     </div>
-
 </body>
-
-<script>
-    $(function () {
-        $('.ajax-popup-link').magnificPopup({
-            type: 'image',
-            alignTop: true,
-            overflowY: 'scroll', // as we know that popup content is tall we set scroll overflow by default to avoid jump
-            closeOnBgClick: true
-        });
-
-        $('.dimm').on('click', function (e) {
-            // 팝업 내부 (.modal)를 클릭한 경우 닫지 않음
-            if (!$(e.target).closest('.modal').length) {
-                // 팝업 닫기
-                $('.modal').fadeOut();
-            }
-        });
-
-        $('#closeModal').on('click', function (e) {
-            e.preventDefault();
-            $('.modal').fadeOut();
-        });
-    })
-</script>
-
-
 </html>

@@ -8,85 +8,45 @@
     <link rel="stylesheet" href="../css/works.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
-    <link rel="stylesheet" href="../css/magnific-popup.css">
     <link rel="stylesheet" href="../css/detail.css">
     <link rel="stylesheet" href="../css/common.css">
-
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="../js/jquery.magnific-popup.min.js"></script>
 </head>
 
 <body>
-    <div class="wrap"></div>
-    <div class="dimm">
-        <div class="modal">
-            <div class="board">
-                <div class="big_title">
-                    <h2>컴팩트 킥보드</h2>
-                    <div class="close">
-                        <a href="#" id="closeModal"><img src="../images/icon_close.png" alt=""></a>
-                    </div>
-                </div>
-                <div class="main_title">
-                    <div class="title">
-                        <h3>공원 디자인</h3>
-                        <p>퍼블릭 디자인</p>
-                    </div>
-                    <div class="textbox">
-                        <div class="leftbox">
-                            <div class="texts">
-                                <p>해변 근처의 자리한 이 공원은 바람의 우아한 흐름을 따라 큰 곡선과 신선함을 느낄 수 있는 디자인을 가지고 있습니다.벤치와 수족관 공간은 휴식과 재미를
-                                    제공하며 방문객들에게 즐거운 체험을 선사합니다. 해안가의 자연적 아름다움과 함께, 수족관에서는 해양 생태계의 다양한 면모를 감상할 수 있어 자연속에서의
-                                    특별한 순간을 만끽할 수 있습니다.</p>
-                            </div>
-                        </div>
-                        <div class="rightbox">
-                            <div class="info">
-                                <h4>기여도</h4>
-                                <p>개인 작업</p>
-                            </div>
-                            <div class="info">
-                                <h4>프로그램</h4>
-                                <p>Adobe Illustrator, Rhino 3D, KeyShot</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div class="modal">
+        <div class="board">
+            <div class="big_title">
+                <h2>컴팩트 킥보드</h2>                    
             </div>
-            <div class="mainphoto">
-                <img src="../images/park-1.png" alt="">
+            <div class="main_title">
+                <div class="title">
+                    <h3>공원 디자인</h3>
+                    <p>퍼블릭 디자인</p>
+                </div>
+                <div class="textbox">
+                    <div class="leftbox">
+                        <div class="texts">
+                            <p>해변 근처의 자리한 이 공원은 바람의 우아한 흐름을 따라 큰 곡선과 신선함을 느낄 수 있는 디자인을 가지고 있습니다.벤치와 수족관 공간은 휴식과 재미를
+                                제공하며 방문객들에게 즐거운 체험을 선사합니다. 해안가의 자연적 아름다움과 함께, 수족관에서는 해양 생태계의 다양한 면모를 감상할 수 있어 자연속에서의
+                                특별한 순간을 만끽할 수 있습니다.</p>
+                        </div>
+                    </div>
+                    <div class="rightbox">
+                        <div class="info">
+                            <h4>기여도</h4>
+                            <p>개인 작업</p>
+                        </div>
+                        <div class="info">
+                            <h4>프로그램</h4>
+                            <p>Adobe Illustrator, Rhino 3D, KeyShot</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        <div class="mainphoto">
+            <img src="../images/park-1.png" alt="">
+        </div>
     </div>
-
 </body>
-
-<script>
-    $(document).ready(function () {
-
-        $('.ajax-popup-link').magnificPopup({
-            type: 'image',
-            alignTop: true,
-            overflowY: 'scroll', // as we know that popup content is tall we set scroll overflow by default to avoid jump
-            closeOnBgClick: true
-        });
-
-        $('.dimm').on('click', function (e) {
-            // 팝업 내부 (.modal)를 클릭한 경우 닫지 않음
-            if (!$(e.target).closest('.modal').length) {
-                // 팝업 닫기
-                $('.modal').fadeOut();
-            }
-        });
-
-        $('#closeModal').on('click', function (e) {
-            e.preventDefault();
-            $('.modal').fadeOut();
-        });
-    })
-
-</script>
-
-
 </html>
