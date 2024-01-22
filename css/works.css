@@ -84,17 +84,14 @@
     right: 200px;
     font-size: 30px;
 }
-
+/* 
 .dimm {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    /* background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1000;
-    display: none; */
-}
+} */
 
 .modal {
     position: fixed;
@@ -114,6 +111,10 @@
     width: 1300px;
 }
 
+.board.inpopup{
+    width: 700px;
+}
+
 .board .big_title .close {
     cursor: pointer;
 }
@@ -122,8 +123,8 @@
     gap: 40px;
 }
 
-.board .textbox .leftbox {
-    /* width: 380px; */
+.board.inpopup .leftbox {
+    width: 450px;
 }
 .mainphoto {
     width: 700px;

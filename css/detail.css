@@ -16,7 +16,8 @@
     justify-content: space-between;
     padding-bottom: 68px;
 }
- .big_title h2 {
+
+.big_title h2 {
     font-size: 36px;
     font-weight: 600;
     line-height: 1.4;
@@ -95,7 +96,9 @@
     font-weight: bold;
     width: 84px;
 }
-.rightbox .info p {}
+.board.inpopup .rightbox .info p {
+    width: 218px;
+}
 
 .banner {
     position: relative;

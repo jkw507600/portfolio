@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cilantro</title>
+    <title>Works</title>
     <link rel="stylesheet" href="../css/works.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/detail.css">
@@ -266,7 +266,8 @@
                 </div>
                 <div class="grid-item Gr">
                     <div class="photo">
-                        <a class="popup" href="#"><img src="../images/list_18.jpg" alt=""></a>
+                        <a class="popup" href="../popup/popup_banner_3.html"><img src="../images/list_18.jpg"
+                                alt=""></a>
                     </div>
                     <div class="titles">
                         <div class="name">
@@ -325,6 +326,33 @@
         </div>
     </div>
 </body>
+
+<script>
+    $(function () {
+        var n = $(location).attr('search')
+
+        if (n.match('toy')) {
+            jQuery.magnificPopup.open({
+                items: { src: '../popup/popup_toy.html' }, type: 'ajax'
+            }, 0);
+        }
+        if (n.match('lotte')) {
+            jQuery.magnificPopup.open({
+                items: { src: '../popup/popup_lotte.html' }, type: 'ajax'
+            }, 0);
+        }
+        if (n.match('lush')) {
+            jQuery.magnificPopup.open({
+                items: { src: '../popup/popup_lush.html' }, type: 'ajax'
+            }, 0);
+        }
+        if (n.match('catelog')) {
+            jQuery.magnificPopup.open({
+                items: { src: '../popup/popup_Catelog.html' }, type: 'ajax'
+            }, 0);
+        }
+    })
+</script>
 
 <script>
     $(function () {
