@@ -19,7 +19,7 @@
 2. 사용 기술
      - 프로그램 언어 및 프로그램
 
-3. 작업물 소개
+3. 대표 작업물 소개
      - <a id="content3" href="#list_1">UIUX 작업물</a>
      - <a href="#list_2">Graphic 작업물</a>
      - <a href="#list_3">3d Mockup 작업물</a>
@@ -46,7 +46,7 @@
 - **`Stripo`**
 
 
-## :fire: 작업물 소개
+## :fire: 대표 작업물 소개
 
   
 ### - <a id="list_1">UIUX 작업물</a>  
