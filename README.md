@@ -56,7 +56,7 @@
  하루콩은 감정을 간단한 콩 이모티콘으로 기록하는 다이어리 앱으로, 일상의 감정을 쉽게 기록하고 감정 변화에 대한 통계와 분석을 제공하는 무드 트래커 및 다이어리 서비스입니다. 이 어플의 사용자들은 대부분 만족하며 높은 평점을 주었다. 그 점에 궁금증이 생겨서 어플을 분석하고 아쉬운 부분은 리디자인하였다. 다른 어플과 차별점은 이모지 아이콘을 클릭하면 글자를 사용하지 않고도 감정과 일상을 기록할 수 있으며 기록한 아이콘들은 캘린더에 표시되어 한 달 동안의 감정을 직관적으로 확인할 수 있습니다. 아쉬운 부분은 감정 통계 및 분석 기능 확장, 사용자의 일상을 더 다양하게 기록할 수 있는 새로운 기능 도입하기위해 리디자인을 하게 되었습니다.
 
 [피그마 자세히보기] (https://www.figma.com/file/3deXBrmsYZglnMztDnTJat/%EC%95%B1-%EB%B6%84%EC%84%9D?type=design&node-id=0%3A1&mode=design&t=JQnqBfpRPdHgazbv-1)
-[pdf 자세히보기] (file:///C:/Kyeongwon%20Jang%20works/Kyoengwon-Jang/web%20works/portfolio/images/App%20redesign.pdf)
+[pdf 자세히보기] (../images/App redesign.pdf)
 ![list_10](https://github.com/jkw507600/portfolio/assets/145305173/dc4b064a-d199-4dc1-b0dc-cb24a5381023)
 
 
