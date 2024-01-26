@@ -68,3 +68,7 @@
 
 - [피그마 자세히보기](https://www.figma.com/file/sLXutRo60EcKYOEaG7mfye/%EC%9D%B4%EB%8B%88%EC%8A%A4%ED%94%84%EB%A6%AC?type=design&node-id=0%3A1&mode=design&t=mS4nVxQAv6lhaw8U-1)
 - [웹사이트 자세히보기](https://jkw507600.github.io/innisfree/)
+
+![list_11](https://github.com/jkw507600/portfolio/assets/145305173/81dd5cc9-2441-409b-a777-f84565d21ec4)
+
+- - - - -
