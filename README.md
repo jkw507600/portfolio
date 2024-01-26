@@ -60,7 +60,6 @@
 
 ![list_10](https://github.com/jkw507600/portfolio/assets/145305173/dc4b064a-d199-4dc1-b0dc-cb24a5381023)
 
-- - - - -
 
 #### 2. 웹사이트 클론
 
@@ -72,3 +71,5 @@
 ![list_11](https://github.com/jkw507600/portfolio/assets/145305173/81dd5cc9-2441-409b-a777-f84565d21ec4)
 
 - - - - -
+
+### - <a id="list_2">Graphic 작업물</a> 
