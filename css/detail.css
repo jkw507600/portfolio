@@ -83,6 +83,14 @@
     gap: 30px;
 }
 
+.textbox .links > a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
 .textbox .rightbox {
     width: 385px;
     display: flex;
