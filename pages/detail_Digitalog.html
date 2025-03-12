@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cilantro</title>
+    <link rel="stylesheet" href="../css/detail.css">
+    <link rel="stylesheet" href="../css/works.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="icon" href="../images/favicon-32x32.png">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header"></div>
+        <div class="view app">
+            <div class="board">
+                <div class="big_title">
+                    <h2>웹 사이트 리뉴얼</h2>
+                    <div class="back">
+                        <a href="../pages/works.html"><img src="/images/icon-Arrow-Left.svg">BACK</a>
+                    </div>
+                </div>
+                <div class="main_title">
+                    <div class="title">
+                        <h3>마케팅 캘린더 서비스<h3>
+                        <p>UI/UX</p>
+                    </div>
+                    <div class="textbox">
+                        <div class="leftbox">
+                            <div class="texts">
+                                <p> 비즈캘린더는 마케팅 일정 관리와 캠페인 운영을 효율적으로 지원하는 서비스로, 지속적인 성장과 기능 확장을 통해 더 강력한 솔루션으로 발전하고 있습니다. 이번 홈페이지 리뉴얼은 서비스의 성장과 업데이트된 기능을 효과적으로 반영하고, 사용자 경험을 최적화하기 위해 진행되었습니다. 새로운 홈페이지는 직관적인 UX/UI, 확장된 기능 소개, 반응형 디자인 적용, 브랜드 아이덴티티 강화 등을 중심으로 개편되었으며, 사용자가 보다 쉽게 접근하고 활용할 수 있도록 설계되었습니다.</p>
+                            </div>
+                            <div class="links">
+                                <a target="_blank"
+                                    href="https://www.figma.com/design/abKdDjp6UNoQCLJmZRnu8A/Untitled?node-id=0-1&t=9Mtd1zmIlbJZuqTZ-1"
+                                    class="link"><img src="../images/icon_figma.svg" alt="">FIGMA</a>
+                                <a target="_blank" href="../images/Digitalog homepage/Biz.pdf" class="link"><img
+                                        src="../images/icon_pdf.svg" alt="Download PDF">PDF Download</a>
+                            </div>
+                        </div>
+                        <div class="rightbox">
+                            <div class="info">
+                                <h4>작업일</h4>
+                                <p>2024.04-10</p>
+                            </div>
+                            <div class="info">
+                                <h4>기여도</h4>
+                                <p>Published Work</p>
+                            </div>
+                            <div class="info">
+                                <h4>프로그램</h4>
+                                <p>Figma</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrap color">
+            <div class="view">
+                <div class="imgboxes">
+                    <img src="../images/Digitalog homepage/0-1Cover.jpg" alt="">
+                    <img src="../images/Digitalog homepage/0-2Overview.jpg" alt="">
+                    <img src="../images/Digitalog homepage/01-Introduction.jpg" alt="">
+                    <img src="../images/Digitalog homepage/02-1.jpg" alt="">
+                    <img src="../images/Digitalog homepage/02-2.jpg" alt="">
+                    <img src="../images/Digitalog homepage/03-1.jpg" alt="">
+                    <img src="../images/Digitalog homepage/03-2.jpg" alt="">
+                    <img src="../images/Digitalog homepage/04-1.jpg" alt="">
+                    <img src="../images/Digitalog homepage/04-2.jpg" alt="">
+                    <img src="../images/Digitalog homepage/05-1.jpg" alt="">
+                    <img src="../images/Digitalog homepage/05-2.jpg" alt="">
+                    <img src="../images/Digitalog homepage/05-3.jpg" alt="">
+                    <img src="../images/Digitalog homepage/05-4.jpg" alt="">
+                    <img src="../images/Digitalog homepage/05-5.jpg" alt="">
+                    <img src="../images/Digitalog homepage/05-6.jpg" alt="">
+                    <img src="../images/Digitalog homepage/05-7.jpg" alt="">
+                    <img src="../images/Digitalog homepage/BackCover.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <button id="top-btn"> <img src="../images/icon_scrollTop.png" alt=""></button>
+        <div class="footer"></div>
+    </div>
+
+</body>
+<script>
+    $(function () {
+        $('.footer').load('../inc/footer.html')
+        $('.header').load('../inc/header.html')
+
+    })
+</script>
+
+<script>
+    $(document).ready(function () {
+        // Top 버튼 특정 스크롤높이에서만 보이기 / 숨기기
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                $('#top-btn').fadeIn();
+            } else {
+                $('#top-btn').fadeOut();
+            }
+        });
+
+        // Top 버튼 클릭시 페이지 상단으로 이동
+        $('#top-btn').click(function () {
+            $('html, body').animate({ scrollTop: 0 }, 800);
+            return false;
+        });
+    });
+</script>
+
+</html>

@@ -32,7 +32,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 7px 10px;
+    padding: 7px 16px 7px 10px;
     font-size: 14px;
     font-weight: bold;
     background-color: #C8E3C6;
@@ -127,6 +127,7 @@
     left: 0;
     padding: 0 35px;
     font-size: 30px;
+    cursor: pointer;
 }
 
 .arrows i {

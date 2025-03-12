@@ -90,7 +90,8 @@
 }
 
 .item .box.box2 {
-    background-color: #C8E3C6;
+    background-image: url(../images/box2_img_newone.jpg);
+    background-size: cover;
 }
 
 .item .box.box6 {
