@@ -1,4 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Lemon&family=Noto+Sans+KR:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Noto+Sans+KR:wght@300;400;600&display=swap');
+
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter'), url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+    unicode-range: U+0000-00FF; /* 라틴 문자(영어)만 적용 */
+}
+
+@font-face {
+    font-family: 'NotoSans';
+    src: local('Noto Sans KR'), url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;600&display=swap');
+    unicode-range: U+AC00-D7A3; /* 한글만 적용 */
+}
 
 *{
     margin: 0 ;
@@ -19,7 +31,7 @@ body {
     font-size: 16px;
     line-height: 24px;
     color: #222;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Inter', 'NotoSans', sans-serif;
 }
 
 .wrap {

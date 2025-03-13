@@ -22,6 +22,7 @@
     font-weight: 600;
     line-height: 1.4;
 }
+
 .big_title .back {
     display: flex;
     align-items: center;
@@ -32,12 +33,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 7px 16px 7px 10px;
+    padding: 8px 18px 8px 10px;
     font-size: 14px;
-    font-weight: bold;
-    background-color: #C8E3C6;
+    font-weight: 400;
+    line-height: 14px;
+    border: 1px solid rgb(0 0 0 / 15%);
+    background-color: #fff;
     border-radius: 30px;
-    color: #222;
+    color: #0d0d0d;
+    gap: 4px;
 }
 
 .big_title .back a i {
@@ -54,10 +58,10 @@
 .title p {
     line-height: 1.2;
     font-size: 14px;
-    padding: 7px 10px;
-    background-color: #C8E3C6;
+    padding: 8px 14px;
+    background-color: #333;
     border-radius: 30px;
-    color: #222;
+    color: #fff;
 }
 
 .title h3 {
